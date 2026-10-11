@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.biome_sniffer.sniff": {
+      "loop": false,
+      "bones": {
+        "head": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
+        },
+        "left_arm": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
+        },
+        "right_arm": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
+        },
+        "left_leg": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
+        },
+        "right_leg": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
+        }
+      },
+      "animation_length": 5.0,
+      "loop": false
+    }
+  }
+}

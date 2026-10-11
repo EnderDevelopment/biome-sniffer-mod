@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "biomesniffermod:biome_sniffer_jagged_peaks",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "biomesniffermod:biome_sniffer_jagged_peaks"
+    },
+    "component_groups": {
+      "biome_sniffer_jagged_peaks": {
+        "minecraft:movement": {
+          "value": 0.25
+        },
+        "minecraft:navigation.walk": {
+          "can_path_over_water": false,
+          "can_path_over_lava": false,
+          "can_path_over_low_danger": true,
+          "can_path_over_medium_danger": false,
+          "can_path_over_high_danger": false
+        },
+        "minecraft:behavior.sniff": {
+          "priority": 1,
+          "cooldown_time": 10.0,
+          "sniff_duration": 5.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "can_path_over_lava": false,
+        "can_path_over_low_danger": true,
+        "can_path_over_medium_danger": false,
+        "can_path_over_high_danger": false
+      },
+      "minecraft:behavior.sniff": {
+        "priority": 1,
+        "cooldown_time": 10.0,
+        "sniff_duration": 5.0
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["biome_sniffer_jagged_peaks"]
+        }
+      }
+    }
+  }
+}
